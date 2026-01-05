@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: "Poppins", sans-serif ;
@@ -8,6 +12,9 @@ body
 {
     max-width: 1250px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; 
 }
 
 header
@@ -67,7 +74,7 @@ section
 {
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 50px;
 }
 
 section.secondary {
@@ -225,50 +232,53 @@ main p
 .img-responsive
 {
     width: 100%;
+    
 }
 
 
-
-
-
-
-
-@media(max-width: 960px)
-{
-    header h1
-    {
+@media(max-width: 960px) {
+    header {
+        padding: 60px 20px !important;
+    }
+    
+    header h1 {
         font-size: 48px;
     }
-
-     header h2
-    {
+    
+    header h2 {
         font-size: 20px;
     }
-
-     header h3
-    {
+    
+    header h3 {
         font-size: 12px;
     }
     
-    .grid
-    {
+    .grid {
         grid-template-columns: 1fr;
         grid-gap: 32px;
+        width: 100%;
+        overflow: hidden;
     }
-
-    .section
-    {
-        padding: 30px;
+    
+    .grid > * {
+        min-width: 0;
     }
-
-    .card-header img 
-    {
+    
+    section {
+        padding: 30px 15px !important;
+    }
+    
+    .card-header img {
         display: none;
     }
-
-  .embed 
-  {
-    aspect-ratio: 16 / 9;
-  }
     
+    .embed {
+        aspect-ratio: 16 / 9;
+        max-width: 100%;
+    }
+    
+    footer {
+        padding: 30px 15px !important;
+    }
 }
+    
