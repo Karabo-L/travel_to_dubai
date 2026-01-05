@@ -240,6 +240,12 @@ main p
     header {
         padding: 60px 20px !important;
     }
+
+    body{
+      word-wrap: break-word; 
+        overflow-wrap: break-word; 
+        max-width: 100%; 
+    }
     
     header h1 {
         font-size: 48px;
